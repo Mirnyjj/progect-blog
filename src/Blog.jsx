@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router';
 import { styled } from 'styled-components'
-import { Header } from './components';
+import { Footer, Header } from './components';
 
 
 const AppColomn = styled.div`
@@ -20,7 +20,6 @@ const H2 = styled.h2`
   text-align: center;
 `
 
-const Footer = () => <div>Футер</div>
 
 function Blog() {
 
