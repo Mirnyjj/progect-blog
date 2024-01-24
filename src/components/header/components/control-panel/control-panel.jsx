@@ -36,8 +36,6 @@ const ControlPanelConteiner = ({className}) => {
     const login = useSelector(selectUserLogin);
     const session = useSelector(selectUserSession);
 
-    console.log(roleId === ROLE.GUEST, roleId, ROLE.GUEST);
-
     return (
         <div className={className}>
             <RightAligned>

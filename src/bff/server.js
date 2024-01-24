@@ -8,7 +8,6 @@ export const server = {
     },
     async authorize(authLogin, authPassword) {
         const user = await getUser(authLogin);
-        console.log(user);
 
         if(!user) {
             return {
@@ -35,18 +34,18 @@ export const server = {
         }
 
     },
-    async register(reghLogin, regPassword) {
+    async register(regLogin, regPassword) {
 
-        const user = await getUser(reghLogin);
+        const existedUser = await getUser(regLogin);
 
-        if(user) {
+        if (existedUser) {
             return {
                 error: 'Такой пользователь уже зарегистрирован',
                 res: null,
             }
         }
 
-        await addUser(reghLogin, regPassword);
+        const user = await addUser(regLogin, regPassword);
 
         return {
             error: null,
