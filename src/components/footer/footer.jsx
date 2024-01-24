@@ -17,7 +17,7 @@ import { styled } from "styled-components";
     return (
         <div className={className}>
             <div>
-                <div>Blog by web-developer</div>
+                <div>Blog web-developer</div>
                 <div>mirnyjj94@mail.ru</div>
             </div>
             <div>
