@@ -26,4 +26,5 @@ const HeaderConteiner = ({className}) => (
     padding: 20px 40px;
     box-shadow: 0 0px 8px #000;
     background-color: #fff;
+    z-index: 10;
 `

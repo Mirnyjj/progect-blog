@@ -17,19 +17,19 @@
   ],
   "roles": [
     {
-      "id": 0,
+      "id": "0",
       "name": "Администратор"
     },
     {
-      "id": 1,
+      "id": "1",
       "name": "Модератор"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Читатель"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Гость"
     }
   ],
@@ -93,10 +93,91 @@
   ],
   "comments": [
     {
-      "id": "111",
-      "author_id": "111",
-      "post_id": "111",
-      "content": "111"
+      "id": "4900",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-08-16 10:07",
+      "content": "My first comment"
+    },
+    {
+      "id": "54f0",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-08-13 10:47",
+      "content": "My first comment1\n"
+    },
+    {
+      "id": "a5d9",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-06-17 02:57",
+      "content": "My first comment12\n"
+    },
+    {
+      "id": "23eb",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-07-08 04:39",
+      "content": "My first comment123\n"
+    },
+    {
+      "id": "a2f4",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-05-26 16:24",
+      "content": "My first comment1234\n"
+    },
+    {
+      "id": "6019",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-08-15 18:32",
+      "content": "My first comment12345\n"
+    },
+    {
+      "id": "2a87",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-08-21 21:29",
+      "content": "My first comment123456\n"
+    },
+    {
+      "id": "5421",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-09-06 07:14",
+      "content": "New comment"
+    },
+    {
+      "id": "61d4",
+      "author_id": "3d44",
+      "post_id": "001",
+      "published_at": "2033-05-29 07:28",
+      "content": "dsvdfjuykiukuil"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "c2e0",
+      "hash": "0.24577374598392220939047092542750760912895202636719",
+      "user": {
+        "id": "3d44",
+        "login": "Maksim",
+        "password": "424991",
+        "registeredAt": "2033-08-08 16:10",
+        "roleId": 0
+      }
+    },
+    {
+      "id": "985f",
+      "hash": "0.87452347283798004262678205122938379645347595214844",
+      "user": {
+        "id": "3d44",
+        "login": "Maksim",
+        "password": "424991",
+        "registeredAt": "2033-08-08 16:10",
+        "roleId": 0
+      }
     }
   ]
 }
