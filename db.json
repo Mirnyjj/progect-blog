@@ -128,32 +128,11 @@
       "content": "My first comment1234\n"
     },
     {
-      "id": "6019",
-      "author_id": "3d44",
-      "post_id": "001",
-      "published_at": "2033-08-15 18:32",
-      "content": "My first comment12345\n"
-    },
-    {
-      "id": "2a87",
-      "author_id": "3d44",
-      "post_id": "001",
-      "published_at": "2033-08-21 21:29",
-      "content": "My first comment123456\n"
-    },
-    {
       "id": "5421",
       "author_id": "3d44",
       "post_id": "001",
       "published_at": "2033-09-06 07:14",
       "content": "New comment"
-    },
-    {
-      "id": "61d4",
-      "author_id": "3d44",
-      "post_id": "001",
-      "published_at": "2033-05-29 07:28",
-      "content": "dsvdfjuykiukuil"
     }
   ],
   "sessions": [
