@@ -1,9 +1,10 @@
-import { addPost, updatePost } from "../api";
+import { deleteComment, deletePost, getComments } from "../api";
 import { ROLE } from "../constants";
 import { sessions } from "../sessions";
 
-export const savePost = async (hash, newPostData) => {
+export const removePost = async (hash, id) => {
     const accessRole = [ROLE.ADMIN];
+
 
     const access = await sessions.access(hash, accessRole);
     if (!access) {
@@ -13,13 +14,15 @@ export const savePost = async (hash, newPostData) => {
         }
     }
 
+    await deletePost(id);
+    
+    const comments = await getComments(id);
 
-    const savedPost = newPostData.id === '' 
-    ? await addPost(newPostData) 
-    : await updatePost(newPostData);
+    await Promise.all(comments.map(({id: commentId}) => deleteComment(commentId)));
 
     return {
         error: null,
-        res: savedPost,
+        res: true,
     }
+
 };
