@@ -4,7 +4,7 @@ import { sessions } from "../sessions";
 
 export const addPostComment = async (hash, userId, postId, content) => {
     const accessRole = [ROLE.ADMIN, ROLE.MODERATOR, ROLE.READER];
-    console.log('userId, postId, content')
+    // console.log(hash, userId, postId, content)
 
 
     const access = await sessions.access(hash, accessRole);
@@ -14,7 +14,7 @@ export const addPostComment = async (hash, userId, postId, content) => {
             res: null,
         }
     }
-    console.log('userId, postId, content')
+
 
     await addComment(userId, postId, content);
 
