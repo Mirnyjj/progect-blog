@@ -9,6 +9,7 @@ import { setUser } from './actions';
 
 const AppColomn = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   width: 1000px;
