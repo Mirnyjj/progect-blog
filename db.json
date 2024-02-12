@@ -13,6 +13,13 @@
       "password": "22218991",
       "registed_at": "2033-05-26 21:17",
       "role_id": 1
+    },
+    {
+      "login": "Igor",
+      "password": "123456789",
+      "registed_at": "2033-09-06 16:42",
+      "role_id": 2,
+      "id": "_kuxiIz"
     }
   ],
   "roles": [
@@ -267,6 +274,17 @@
         "registeredAt": "2033-05-26 21:17",
         "roleId": 1
       }
+    },
+    {
+      "hash": "0.08063878541701208213510199129814282059669494628906",
+      "user": {
+        "id": "3d44",
+        "login": "Maksim",
+        "password": "424991",
+        "registeredAt": "2033-08-08 16:10",
+        "roleId": 0
+      },
+      "id": "u4ea283"
     }
   ]
 }
