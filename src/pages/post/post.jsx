@@ -6,7 +6,7 @@ import {Error, PrivateContent} from "../../components"
 import { useMatch, useParams } from "react-router";
 import { useServerRequest } from "../../hooks";
 import { RESET_POST_DATA, loadPostAsync } from "../../actions";
-import { selectPost } from "../../selectors";
+import { selectPost} from "../../selectors";
 import { ROLE } from "../../constants";
 
 const PostContainer = ({className}) => {
