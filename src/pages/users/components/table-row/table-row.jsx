@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import PropTypes from 'prop-types';
 
 
 const TableRowContainer = ({className, children}) => {
@@ -30,3 +31,7 @@ export const TableRow = styled(TableRowContainer)`
 
     }
 `;
+
+TableRow.propTypes = {
+    children: PropTypes.node.isRequired,
+}

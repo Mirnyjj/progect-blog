@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import PropTypes from 'prop-types';
 import { Icon } from "../../../../components";
 import { useDispatch, useSelector } from "react-redux";
 import { CLOSE_MODAL, openModal, removePostAsync } from "../../../../actions";
@@ -72,3 +73,9 @@ export const SpecialPanel = styled(SpecialPanelContainer)`
     };
 
 `
+
+SpecialPanel.propTypes = {
+    id: PropTypes.string.isRequired, 
+    publishedAt: PropTypes.string.isRequired, 
+    editButton: PropTypes.node.isRequired,
+}

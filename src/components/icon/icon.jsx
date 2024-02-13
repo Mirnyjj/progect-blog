@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import PropTypes from 'prop-types';
 
 const IconConteiner = ({ className, id, inactive, ...props}) => (
     <div className={className} {...props}>
@@ -16,3 +17,9 @@ export const Icon = styled(IconConteiner)`
 
 
 `;
+
+Icon.propTypes = {
+    id: PropTypes.string.isRequired,
+    inactive: PropTypes.bool,
+
+}

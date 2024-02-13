@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { savePostAsync } from "../../../../actions";
 import { useServerRequest } from "../../../../hooks";
+import { PROP_TYPE } from "../../../../constants";
 
 const PostFormContainer = ({className, post: {id, title, imageUrl, content, publishedAt}}) => {
     const contentRef = useRef(null);
@@ -32,7 +33,9 @@ const PostFormContainer = ({className, post: {id, title, imageUrl, content, publ
             content: newContent,
 
         }),
-        ).then(({id}) => navigate(`/post/${id}`));
+        )
+        // .then(({id}) => navigate(`/post/${id}`));
+        navigate(`/post/${id}`);
     };
 
     const onImageChange = ({target}) => setImageUrlValue(target.value);
@@ -76,3 +79,7 @@ export const PostForm = styled(PostFormContainer)`
     };
 
 `;
+
+PostForm.propTypes = {
+    post: PROP_TYPE.POST.isRequired,
+}
